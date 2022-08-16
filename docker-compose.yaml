@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  mayankwebapp:
+      image: mayankweb:appv1
+      build: .
+      container_name: mayankc1
+      ports:
+        - 1274:80
+      restart: always
